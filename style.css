@@ -1,0 +1,67 @@
+#front, #back { position: absolute; width: 100vw; }
+#back { min-height: 100vh; z-index: 1; }
+#front { z-index: 1; }
+#back { background-image: url(./becca.jpeg); opacity: 0.5;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    color: rgb(46, 46, 100);
+    min-height: 100vh;
+    padding: -2rem;
+}
+.time-left{
+    color:rgb(203, 83, 103)
+}
+.heart{
+    width: 40%;
+    height: 40%;
+}
+.container{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    border-top: 2px solid white;
+    animation: wobble 5s infinite;
+}
+.container p {
+    font-size: 30px;
+}
+.heart {
+    transform: rotate(45deg);
+   
+    animation: animateHeart 1.2s infinite;
+  }
+@keyframes animateHeart {
+  
+    0% {
+      transform: scale(0.8);
+    
+    }
+    5% {
+      transform:  scale(0.9);
+    }
+    10% {
+      transform: scale(0.8);
+   
+    }
+    15% {
+      transform:  scale(1);
+    }
+    50% {
+      transform:  scale(0.8);
+   
+    }
+    100% {
+      transform:  scale(0.8);
+     
+    }
+  }
+  
